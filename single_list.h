@@ -41,6 +41,8 @@ ES_t list_deletLastNode(struct node **headList);
 
 ES_t list_deletNodeAfter(struct node *headList, uint32 nodeNumber);
 
+ES_t list_reverse(struct node **headList);
+
 /*************************************** END DECLERATION ******************************************/
 
 #endif // !_QUEUE_H_
