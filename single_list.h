@@ -51,5 +51,6 @@ ES_t list_reverse(struct node **headList);
  * AUTHOR              DATE                    BRIEF
  **************************************************************************************************
  * TAREK ALLAM         2 NOV 2022             write declertaions
+ * TAREK ALLAM         3 NOV 2022             ADD REVERSE FUNCTION
  *
  */

@@ -199,6 +199,30 @@ ES_t list_deletNodeAfter(struct node *headList, uint32 nodeNumber)
     return ErrorState_local;
 }
 
+ES_t list_reverse(struct node **headList)
+{
+    ES_t ErrorState_local = ES_NOK;
+    node_t *tempNode = NULL;
+    node_t *nextTempNode = NULL;
+    node_t *nextNextTempNode = NULL;
+    tempNode = *headList;
+    nextTempNode = tempNode->nextNode;
+    nextNextTempNode = nextTempNode->nextNode;
+    tempNode->nextNode = NULL;
+    nextTempNode->nextNode = tempNode;
+
+    while (nextNextTempNode != NULL)
+    {
+        tempNode = nextTempNode;
+        nextTempNode = nextNextTempNode;
+        nextNextTempNode = nextNextTempNode->nextNode;
+
+        nextTempNode->nextNode = tempNode; // reverse link
+    }
+
+    *headList = nextTempNode;
+    return ErrorState_local;
+}
 /*************************************** END DECLERATION ******************************************/
 /************************************************************************************************
  * AUTHOR              DATE                    BRIEF
