@@ -1,8 +1,9 @@
 # Single_Linked_List
 
-functions : 
-            list_insertNodeEnd  \n
+functions :<br> 
+            
             list_insertNodeBegging
+            list_insertNodeEnd
             list_insertNodeAfter
             list_showItems
             list_GetLength
