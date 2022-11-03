@@ -1,7 +1,7 @@
 # Single_Linked_List
 
 functions : 
-            list_insertNodeEnd  
+            list_insertNodeEnd  \n
             list_insertNodeBegging
             list_insertNodeAfter
             list_showItems
